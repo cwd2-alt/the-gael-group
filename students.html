@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get Involved — The Gael Group</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:#030a13;color:#f5f5f2;font-family:Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}
+nav{height:72px;border-bottom:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:space-between;padding:0 5%;background:#030a13}
+.brand{display:flex;align-items:center;gap:12px;font-size:13px;font-weight:700;letter-spacing:.13em}
+.brand img{width:28px;height:28px;object-fit:contain}
+.back{font-size:12px;color:#aeb9c8}
+main{max-width:1050px;margin:0 auto;padding:85px 5% 110px}
+.eyebrow{font-size:10px;letter-spacing:.35em;text-transform:uppercase;color:#d21e3a;margin-bottom:25px}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(52px,7vw,92px);line-height:.94;margin:0 0 28px;font-weight:700}
+h1 em{font-weight:400}
+.intro{max-width:680px;color:#aeb9c8;font-size:17px;line-height:1.7;margin-bottom:58px}
+.form-top{display:grid;grid-template-columns:1fr 1fr;gap:45px;border-top:1px solid rgba(255,255,255,.15)}
+.field{padding:29px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.full{grid-column:1/-1}
+label{display:block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8f9bad;margin-bottom:13px}
+input,textarea,select{width:100%;border:0;outline:0;background:transparent;color:#fff;font:inherit;font-size:17px;padding:5px 0}
+input::placeholder,textarea::placeholder{color:#566273}
+select{appearance:none}
+select option{background:#07111d;color:#fff}
+textarea{min-height:125px;resize:vertical}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}
+.check{display:flex;align-items:center;gap:10px;color:#c5ccd6;font-size:14px}
+.check input{width:16px;height:16px;accent-color:#d21e3a}
+.submit-row{display:flex;align-items:center;justify-content:space-between;gap:30px;padding-top:38px}
+.submit{border:0;background:#d21e3a;color:#fff;padding:16px 25px;border-radius:999px;font-weight:700;cursor:pointer}
+.note{font-size:12px;color:#718096;line-height:1.5;max-width:520px}
+.success{display:none;border:1px solid rgba(210,30,58,.5);padding:22px 24px;margin-top:30px;color:#dfe5ec}
+@media(max-width:700px){.form-top{grid-template-columns:1fr}.full{grid-column:auto}.checks{grid-template-columns:1fr}.submit-row{align-items:flex-start;flex-direction:column}main{padding-top:60px}}
+</style>
+</head>
+<body>
+<nav>
+<a class="brand" href="index.html"><img src="gael-group-logo.png" alt=""><span>THE GAEL GROUP</span></a>
+<a class="back" href="index.html">← Back to The Gael Group</a>
+</nav>
+
+<main>
+<div class="eyebrow">For Students · Join The Gael Group</div>
+<h1>Build something<br><em>with us.</em></h1>
+<p class="intro">Interested in consulting, business, strategy, or gaining experience working on real-world projects? Tell us a little about yourself. We'll use this form to keep you updated about recruitment, events, and opportunities with The Gael Group.</p>
+
+<form id="studentForm" action="mailto:REPLACE_WITH_GAEL_GROUP_EMAIL" method="post" enctype="text/plain">
+<div class="form-top">
+<div class="field"><label for="name">Full Name</label><input id="name" name="Name" type="text" placeholder="Your name" required></div>
+<div class="field"><label for="email">Saint Mary's Email</label><input id="email" name="Email" type="email" placeholder="you@stmarys-ca.edu" required></div>
+
+<div class="field"><label for="year">Class Year</label>
+<select id="year" name="Class Year" required><option value="">Select one</option><option>First Year</option><option>Sophomore</option><option>Junior</option><option>Senior</option><option>Graduate Student</option></select></div>
+
+<div class="field"><label for="major">Major / Program</label><input id="major" name="Major / Program" type="text" placeholder="e.g. Business Administration"></div>
+
+<div class="field full"><label>What are you interested in?</label>
+<div class="checks">
+<label class="check"><input type="checkbox" name="Interest" value="Consulting"> Consulting</label>
+<label class="check"><input type="checkbox" name="Interest" value="Strategy"> Strategy</label>
+<label class="check"><input type="checkbox" name="Interest" value="Marketing"> Marketing & Brand</label>
+<label class="check"><input type="checkbox" name="Interest" value="Research"> Market Research</label>
+<label class="check"><input type="checkbox" name="Interest" value="Data"> Data & Analytics</label>
+<label class="check"><input type="checkbox" name="Interest" value="Operations"> Operations</label>
+</div></div>
+
+<div class="field"><label for="experience">Previous Experience</label>
+<select id="experience" name="Previous Experience"><option value="">Select one</option><option>No previous experience</option><option>Some coursework / projects</option><option>Internship experience</option><option>Previous consulting experience</option><option>Professional experience</option></select></div>
+
+<div class="field"><label for="linkedin">LinkedIn <span style="text-transform:none;letter-spacing:0">(optional)</span></label><input id="linkedin" name="LinkedIn" type="text" placeholder="linkedin.com/in/..."></div>
+
+<div class="field full"><label for="why">Why are you interested in The Gael Group?</label><textarea id="why" name="Why Interested" placeholder="Tell us what you're hoping to learn, contribute, or get involved with."></textarea></div>
+
+<div class="field full"><label for="anything">Anything else you'd like us to know? <span style="text-transform:none;letter-spacing:0">(optional)</span></label><textarea id="anything" name="Additional Information" placeholder="Anything you'd like to share with us."></textarea></div>
+</div>
+
+<div class="submit-row">
+<p class="note">By submitting this form, you'll be added to our student interest list. We'll contact you about recruiting, events, information sessions, and future opportunities.</p>
+<button class="submit" type="submit">Join the Interest List →</button>
+</div>
+</form>
+<div id="success" class="success">Thanks — your interest has been submitted. We’ll be in touch about upcoming Gael Group opportunities.</div>
+</main>
+<script>
+document.getElementById('studentForm').addEventListener('submit', function(){
+  setTimeout(function(){document.getElementById('success').style.display='block'}, 250);
+});
+</script>
+</body>
+</html>
